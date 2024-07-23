@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Zote</title>
+
+    <style>
+        @font-face {
+            font-family: Trajan;
+            src: url("Trajan Pro Regular.ttf");
+        }
+
+        html, body {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            background: black;
+            background-image: url(https://i.giphy.com/ftfVpeWsm95QgGfOZ8.webp);
+            background-size: 200%;
+            background-blend-mode: lighten;
+            background-position: 50% 25%;
+        }
+        #main {
+            height: 100%;
+            display: flex;
+            color: white;
+            font-family: Trajan;
+            background: radial-gradient(circle at 50%, #cccccc55, #000000cc 90%);
+            backdrop-filter: blur(10px) brightness(3) contrast(400%) brightness(0.4);
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            text-shadow:
+                0 0 10px black,
+                0 0 4px black,
+                0 0 4px black,
+                0 0 4px black;
+        }
+
+        #title {
+            text-transform: uppercase;
+            font-size: xx-large;
+        }
+
+        #quote {
+            text-transform: capitalize;
+            max-width: 700px;
+            width: 80%;
+            text-align: center;
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <span id="date"></span>
+        <h1 id="title"></h1>
+        <span id="quote"></span>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
